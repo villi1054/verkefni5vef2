@@ -1,0 +1,55 @@
+body{
+	max-width: 50em;
+	margin: 0 auto;
+	font-family: sans-serif;
+	background-color: #111;
+}
+
+.box{
+	text-align: center;
+	border: solid 1px #111;
+	height: 100%;
+	font-size: 1.5em;
+}
+
+.box:nth-child(even){
+  background-color: #555;
+}
+
+.box:nth-child(odd){
+  background-color: #444;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.row section{
+	border: 0;
+}
+
+h2{
+	text-align: center;
+	color: #AAA;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #AAA;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
