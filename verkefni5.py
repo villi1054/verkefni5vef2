@@ -1,5 +1,10 @@
-from bottle import *
+from sys import argv
+
+import bottle
 import urllib.request, json
+from bottle import *
+bottle.debug(True)
+
 
 with urllib.request.urlopen("http://apis.is/petrol") as url:
     data = json.loads(url.read().decode())
@@ -22,4 +27,4 @@ def villa(error):
     <a href=/> Smelltu hér til að fara á forsíðu </a>"""
 
 
-run(host='localhost', port=8080, reloader=True, debug=True)
+bottle.run(host='0.0.0.0', port=argv[1])
